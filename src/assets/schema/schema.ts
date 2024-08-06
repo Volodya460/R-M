@@ -10,6 +10,11 @@ interface Location {
   url: string;
 }
 
+export interface CustomError extends Error {
+  status: number;
+  message: string;
+}
+
 export interface Results {
   id: number;
   name: string;
